@@ -2,13 +2,13 @@ const editions = [
   {
     edition: 2,
     seed: 15838,
-    image: "img/coobeyon-2.webp",
+    image: "img/stigmergy-2.webp",
     zora: "https://zora.co/collect/base:0x584eB68F93bEcf6E463E7F259605c82Ef35c21e3/2",
   },
   {
     edition: 1,
     seed: 7919,
-    image: "img/coobeyon-1.webp",
+    image: "img/stigmergy-1.webp",
     zora: null,
   },
 ];
@@ -29,7 +29,7 @@ function renderGallery() {
     link.innerHTML = `
       <picture>
         <source srcset="${ed.image}" type="image/webp">
-        <img src="${ed.image}" alt="coobeyon edition ${ed.edition}" loading="lazy">
+        <img src="${ed.image}" alt="stigmergy edition ${ed.edition}" loading="lazy">
       </picture>
       <div class="gallery-meta">
         <span class="gallery-edition">#${ed.edition}</span>
