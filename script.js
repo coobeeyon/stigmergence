@@ -4,12 +4,26 @@ const editions = [
     seed: 15838,
     image: "img/stigmergy-2.webp",
     zora: "https://zora.co/collect/base:0x584eB68F93bEcf6E463E7F259605c82Ef35c21e3/2",
+    params: {
+      agents: "300,000",
+      populations: "3",
+      iterations: "300",
+      resolution: "2048 \u00d7 2048",
+      food: "mixed",
+    },
   },
   {
     edition: 1,
     seed: 7919,
     image: "img/stigmergy-1.webp",
     zora: null,
+    params: {
+      agents: "300,000",
+      populations: "3",
+      iterations: "300",
+      resolution: "2048 \u00d7 2048",
+      food: "mixed",
+    },
   },
 ];
 
@@ -26,6 +40,10 @@ function renderGallery() {
       link.rel = "noopener";
     }
 
+    const paramRows = Object.entries(ed.params)
+      .map(([k, v]) => `<div class="param"><span class="param-key">${k}</span><span class="param-val">${v}</span></div>`)
+      .join("");
+
     link.innerHTML = `
       <picture>
         <source srcset="${ed.image}" type="image/webp">
@@ -35,6 +53,7 @@ function renderGallery() {
         <span class="gallery-edition">#${ed.edition}</span>
         <span class="gallery-seed">seed ${ed.seed}</span>
       </div>
+      <div class="gallery-params">${paramRows}</div>
     `;
 
     grid.appendChild(link);

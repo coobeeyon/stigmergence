@@ -103,7 +103,6 @@ body {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  margin-bottom: 4rem;
   flex-wrap: wrap;
 }
 
@@ -119,29 +118,33 @@ body {
   font-size: 1.2rem;
 }
 
-.params {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem 3rem;
+/* Per-edition params (in gallery cards) */
+
+.gallery-params {
+  padding-top: 0.25rem;
 }
 
-.param {
+.gallery-params .param {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  border-bottom: 1px solid #1a1a1a;
-  padding-bottom: 0.5rem;
+  padding: 0.2rem 0;
+  border-bottom: 1px solid #151515;
 }
 
-.param-key {
+.gallery-params .param:last-child {
+  border-bottom: none;
+}
+
+.gallery-params .param-key {
   font-family: var(--mono);
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   color: var(--accent);
 }
 
-.param-val {
+.gallery-params .param-val {
   font-family: var(--mono);
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   color: var(--text);
   text-align: right;
 }
@@ -238,11 +241,6 @@ body {
 
   .concept {
     padding: 12vh 1.25rem;
-  }
-
-  .params {
-    grid-template-columns: 1fr;
-    gap: 0.75rem;
   }
 
   .gallery-grid {
