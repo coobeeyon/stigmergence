@@ -1,9 +1,22 @@
 const editions = [
   {
+    edition: 7,
+    seed: 55433,
+    image: "img/stigmergence-7.webp",
+    zora: "https://zora.co/collect/base:0x584eB68F93bEcf6E463E7F259605c82Ef35c21e3/3",
+    params: {
+      agents: "400,000",
+      populations: "2",
+      iterations: "600",
+      resolution: "2048 × 2048",
+      food: "clusters",
+    },
+  },
+  {
     edition: 6,
     seed: 47514,
     image: "img/stigmergence-6.webp",
-    zora: "https://zora.co/collect/base:0x584eB68F93bEcf6E463E7F259605c82Ef35c21e3/2",
+    zora: "https://zora.co/collect/base:0x584eB68F93bEcf6E463E7F259605c82Ef35c21e3/5",
     params: {
       agents: "350,000",
       populations: "1",
@@ -16,7 +29,7 @@ const editions = [
     edition: 5,
     seed: 39595,
     image: "img/stigmergence-5.webp",
-    zora: "https://zora.co/collect/base:0x584eB68F93bEcf6E463E7F259605c82Ef35c21e3/5",
+    zora: "https://zora.co/collect/base:0x584eB68F93bEcf6E463E7F259605c82Ef35c21e3/4",
     params: {
       agents: "350,000",
       populations: "1",
@@ -29,7 +42,7 @@ const editions = [
     edition: 4,
     seed: 31676,
     image: "img/stigmergence-4.webp",
-    zora: "https://zora.co/collect/base:0x584eB68F93bEcf6E463E7F259605c82Ef35c21e3/4",
+    zora: "https://zora.co/collect/base:0x584eB68F93bEcf6E463E7F259605c82Ef35c21e3/3",
     params: {
       agents: "350,000",
       populations: "1",
@@ -42,7 +55,7 @@ const editions = [
     edition: 3,
     seed: 23757,
     image: "img/stigmergence-3.webp",
-    zora: "https://zora.co/collect/base:0x584eB68F93bEcf6E463E7F259605c82Ef35c21e3/3",
+    zora: "https://zora.co/collect/base:0x584eB68F93bEcf6E463E7F259605c82Ef35c21e3/2",
     params: {
       agents: "300,000",
       populations: "3",
@@ -55,7 +68,7 @@ const editions = [
     edition: 2,
     seed: 15838,
     image: "img/stigmergence-2.webp",
-    zora: "https://zora.co/collect/base:0x584eB68F93bEcf6E463E7F259605c82Ef35c21e3/2",
+    zora: "https://zora.co/collect/base:0x584eB68F93bEcf6E463E7F259605c82Ef35c21e3/1",
     params: {
       agents: "300,000",
       populations: "3",
