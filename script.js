@@ -1,5 +1,18 @@
 const editions = [
   {
+    edition: 13,
+    seed: 102947,
+    image: "img/stigmergence-13.webp",
+    zora: "https://zora.co/collect/base:0x584eB68F93bEcf6E463E7F259605c82Ef35c21e3/9",
+    params: {
+      agents: "350,000",
+      populations: "3",
+      iterations: "550",
+      resolution: "2048 × 2048",
+      food: "rings",
+    },
+  },
+  {
     edition: 12,
     seed: 95028,
     image: "img/stigmergence-12.webp",
