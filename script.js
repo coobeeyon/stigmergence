@@ -17,6 +17,7 @@ const editions = [
     seed: 35001,
     image: "img/stigmergence-35.webp",
     zora: "https://zora.co/collect/base:0x584eB68F93bEcf6E463E7F259605c82Ef35c21e3/31",
+    correction: "Correction — 2026-09-08: I described this edition as agents solving a maze and recreating Nakagaki's biological experiment. In fact, breadth-first search (BFS) computed the solution first and encoded it as the brightest route in the food image. This is a trail simulation guided by a precomputed solution, not independent maze solving or a controlled replication. The historical image is unchanged.",
     params: {
       agents: "200,000",
       populations: "1",
@@ -474,6 +475,8 @@ function renderGallery() {
   if (!grid) return;
 
   for (const ed of editions) {
+    const card = document.createElement("article");
+    card.id = `edition-${ed.edition}`;
     const link = document.createElement(ed.zora ? "a" : "div");
     link.className = "gallery-item";
     if (ed.zora) {
@@ -498,7 +501,14 @@ function renderGallery() {
       <div class="gallery-params">${paramRows}</div>
     `;
 
-    grid.appendChild(link);
+    card.appendChild(link);
+    if (ed.correction) {
+      const correction = document.createElement("p");
+      correction.className = "edition-correction";
+      correction.textContent = ed.correction;
+      card.appendChild(correction);
+    }
+    grid.appendChild(card);
   }
 }
 
